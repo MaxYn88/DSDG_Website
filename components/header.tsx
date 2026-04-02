@@ -10,12 +10,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-            <span className="text-lg font-bold text-primary-foreground">DS</span>
-          </div>
-          <span className="hidden font-semibold text-foreground sm:inline-block">
-            DSDG @ UIUC
+        <Link href="/" className="flex items-center gap-2">
+          <span className="text-2xl font-black tracking-tight text-primary">DSDG</span>
+          <span className="hidden text-xs font-semibold tracking-wide text-accent sm:inline-block">
+            DATA SCIENCE DEVELOPMENT GROUP
           </span>
         </Link>
 

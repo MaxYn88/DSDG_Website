@@ -22,22 +22,22 @@
 }
 
 :root {
-  /* UIUC Colors - Dark Blue as primary, Orange as accent */
+  /* UIUC Official Colors - Illinois Blue #13294B, Illinois Orange #FF5F05 */
   --background: 0 0% 100%;
-  --foreground: 215 50% 15%;
+  --foreground: 216 60% 18%;
   --card: 0 0% 100%;
-  --card-foreground: 215 50% 15%;
-  --primary: 215 80% 20%;
+  --card-foreground: 216 60% 18%;
+  --primary: 216 60% 18%;
   --primary-foreground: 0 0% 100%;
-  --secondary: 215 30% 95%;
-  --secondary-foreground: 215 50% 15%;
-  --muted: 215 20% 96%;
-  --muted-foreground: 215 20% 45%;
-  --accent: 24 95% 53%;
+  --secondary: 216 30% 95%;
+  --secondary-foreground: 216 60% 18%;
+  --muted: 216 20% 96%;
+  --muted-foreground: 216 20% 45%;
+  --accent: 22 100% 51%;
   --accent-foreground: 0 0% 100%;
-  --border: 215 20% 90%;
-  --ring: 24 95% 53%;
-  --radius: 0.75rem;
+  --border: 216 20% 90%;
+  --ring: 22 100% 51%;
+  --radius: 0.5rem;
 }
 
 * {

@@ -1,5 +1,4 @@
-import { ArrowRight, Instagram } from "lucide-react"
-import Link from "next/link"
+import { Instagram } from "lucide-react"
 
 function SlackIcon({ className }: { className?: string }) {
   return (
@@ -16,15 +15,15 @@ function SlackIcon({ className }: { className?: string }) {
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-primary py-24 md:py-36">
-      <div className="mx-auto max-w-4xl px-4 text-center">
+    <section className="flex min-h-[calc(100vh-4rem)] items-center justify-center bg-primary">
+      <div className="mx-auto max-w-4xl px-4 py-16 text-center">
         <h1 className="text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl">
           Data Science Discovery Group
         </h1>
         
         <div className="mx-auto mt-10 max-w-3xl">
           <h2 className="text-2xl font-semibold text-accent md:text-3xl">Our Mission</h2>
-          <p className="mt-4 text-pretty text-lg text-primary-foreground/90 leading-relaxed">
+          <p className="mt-4 text-pretty text-lg leading-relaxed text-primary-foreground/90">
             To bridge the gap between classroom learning and industry practice by providing UIUC students 
             with practical data science experience through collaborative projects and professional consulting. 
             We cultivate the next generation of data science leaders who drive innovation and make 
@@ -32,29 +31,12 @@ export function Hero() {
           </p>
         </div>
 
-        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Link
-            href="#what-we-do"
-            className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 font-medium text-accent-foreground transition-colors hover:bg-accent/90"
-          >
-            What We Do
-            <ArrowRight className="h-4 w-4" />
-          </Link>
-          <Link
-            href="/events"
-            className="inline-flex items-center gap-2 rounded-lg border-2 border-primary-foreground/30 px-6 py-3 font-medium text-primary-foreground transition-colors hover:border-primary-foreground/50 hover:bg-primary-foreground/10"
-          >
-            Future Events
-            <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
-
-        <div className="mt-8 flex items-center justify-center gap-3">
+        <div className="mt-10 flex items-center justify-center gap-3">
           <a
             href="https://forms.google.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg bg-primary-foreground/10 px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary-foreground/20"
+            className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 font-medium text-accent-foreground transition-colors hover:bg-accent/90"
           >
             Join DSDG
           </a>

@@ -28,6 +28,12 @@ export function Header() {
             Home
           </Link>
           <Link
+            href="/what-we-do"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+          >
+            What We Do
+          </Link>
+          <Link
             href="/events"
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
@@ -67,6 +73,13 @@ export function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Home
+            </Link>
+            <Link
+              href="/what-we-do"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              What We Do
             </Link>
             <Link
               href="/events"

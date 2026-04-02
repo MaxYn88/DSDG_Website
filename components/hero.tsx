@@ -1,5 +1,5 @@
-import Image from "next/image"
 import { ArrowRight, Instagram } from "lucide-react"
+import Link from "next/link"
 
 function SlackIcon({ className }: { className?: string }) {
   return (
@@ -16,60 +16,66 @@ function SlackIcon({ className }: { className?: string }) {
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-primary py-20 md:py-32">
-      <div className="mx-auto max-w-6xl px-4">
-        <div className="flex flex-col items-center gap-12 md:flex-row md:justify-between">
-          <div className="max-w-xl text-center md:text-left">
-            <h1 className="text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl">
-              Data Science Discovery Group
-            </h1>
-            <p className="mt-6 text-pretty text-lg text-primary-foreground/80">
-              Empowering UIUC students to explore, learn, and apply data science through hands-on projects, 
-              collaborative research, and real-world consulting opportunities.
-            </p>
-            <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row md:items-start">
-              <a
-                href="https://forms.google.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 font-medium text-accent-foreground transition-colors hover:bg-accent/90"
-              >
-                Join DSDG
-                <ArrowRight className="h-4 w-4" />
-              </a>
-              <div className="flex items-center gap-3">
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex h-11 w-11 items-center justify-center rounded-lg border border-primary-foreground/20 text-primary-foreground transition-colors hover:bg-primary-foreground/10"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="h-5 w-5" />
-                </a>
-                <a
-                  href="https://slack.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex h-11 w-11 items-center justify-center rounded-lg border border-primary-foreground/20 text-primary-foreground transition-colors hover:bg-primary-foreground/10"
-                  aria-label="Slack"
-                >
-                  <SlackIcon className="h-5 w-5" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="relative">
-            <div className="relative h-64 w-64 overflow-hidden rounded-2xl bg-primary-foreground/10 md:h-80 md:w-80">
-              <Image
-                src="/images/panda-mascot.jpg"
-                alt="DSDG Panda Mascot"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
-          </div>
+    <section className="relative overflow-hidden bg-primary py-24 md:py-36">
+      <div className="mx-auto max-w-4xl px-4 text-center">
+        <h1 className="text-balance text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl">
+          Data Science Discovery Group
+        </h1>
+        
+        <div className="mx-auto mt-10 max-w-3xl">
+          <h2 className="text-2xl font-semibold text-accent md:text-3xl">Our Mission</h2>
+          <p className="mt-4 text-pretty text-lg text-primary-foreground/90 leading-relaxed">
+            To bridge the gap between classroom learning and industry practice by providing UIUC students 
+            with practical data science experience through collaborative projects and professional consulting. 
+            We cultivate the next generation of data science leaders who drive innovation and make 
+            data-informed decisions that positively impact society.
+          </p>
+        </div>
+
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <Link
+            href="#what-we-do"
+            className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 font-medium text-accent-foreground transition-colors hover:bg-accent/90"
+          >
+            What We Do
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+          <Link
+            href="/events"
+            className="inline-flex items-center gap-2 rounded-lg border-2 border-primary-foreground/30 px-6 py-3 font-medium text-primary-foreground transition-colors hover:border-primary-foreground/50 hover:bg-primary-foreground/10"
+          >
+            Future Events
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+
+        <div className="mt-8 flex items-center justify-center gap-3">
+          <a
+            href="https://forms.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg bg-primary-foreground/10 px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary-foreground/20"
+          >
+            Join DSDG
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex h-10 w-10 items-center justify-center rounded-lg border border-primary-foreground/20 text-primary-foreground transition-colors hover:bg-primary-foreground/10"
+            aria-label="Instagram"
+          >
+            <Instagram className="h-5 w-5" />
+          </a>
+          <a
+            href="https://slack.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex h-10 w-10 items-center justify-center rounded-lg border border-primary-foreground/20 text-primary-foreground transition-colors hover:bg-primary-foreground/10"
+            aria-label="Slack"
+          >
+            <SlackIcon className="h-5 w-5" />
+          </a>
         </div>
       </div>
     </section>

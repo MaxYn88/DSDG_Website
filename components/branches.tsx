@@ -29,7 +29,7 @@ const branches = [
 
 export function Branches() {
   return (
-    <section className="py-20 md:py-28">
+    <section id="what-we-do" className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-4">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
